@@ -1,0 +1,57 @@
+<!--Amelia Farrand. December 14, 2023-->
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Lab Two</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style2.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			The Doggie Center 
+			<br>
+			<a href="lab2.html"><img src="images2/paw.webp" alt="dog paw" width="150" height="150"/>
+		</header>
+		<aside>
+			<nav class="center">
+				<div><a href="m1.html">Daycare</a></div>
+				<br>
+				<div><a href="m2.html">Grooming</a></div>
+				<br>
+				<div><a href="m3.html">About</a></div>
+				<br>
+				<div><a href="m4.html">Schedule</a></div>
+			</nav>
+		</aside>
+		<main>
+			<h1 class="heading">Contact Information</h1>
+			<h2>The Doggie Center Ypsilanti</h2>
+			<h3 class="heading">Please provide the following, we will contact you asap for further information to schedule.</h3>
+			<form method="POST" action="submit-form.php">
+				<label for="firstname">First Name:</label>
+				<input type="text" name="fname" id="firstname"/>
+				
+				<label for="lastname">Last Name:</label>
+				<input type="text" name="lname" id="lastname"/>
+				<br>
+				<label for="dogname">Dog's Name:</label>
+				<input type="text" name="dname" id="dogname"/>
+				
+				<label for="birthdate">Dog's Birth date:</label>
+				<input type="date" name="dob" id="birthdate"/>
+				
+				<label for="dogbreed">Dog's Breed:</label>
+				<input type="text" name="dbreed" id="dogbreed"/>
+				<br>
+				<label for="phone">Enter Phone Number:</label><br><br>
+  				<input type="tel" id="phone" name="phone" placeholder="123-456-7891" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+  				<br>
+  				<br>
+  				<input type="submit" class="button" name="submitButton">
+			</form>
+		</main>
+	</body>
+</html>
